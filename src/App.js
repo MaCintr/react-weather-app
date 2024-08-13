@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import WeatherApp from './components/Weather';
+import React from 'react';
 import './App.css';
 
 function App() {
+  React.useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      const htmlTag = document.documentElement;
+      htmlTag.setAttribute('data-bs-theme', savedTheme);
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WeatherApp/>
   );
 }
 
