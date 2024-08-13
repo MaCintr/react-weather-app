@@ -19,7 +19,7 @@ const SearchBar = ({ setCity }) => {
                         className='form-control'
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        placeholder="Enter city"
+                        placeholder="Enter a city..."
                     />
                     <button className='btn btn-outline-secondary me-3' type="submit">Search</button>
                 </form>

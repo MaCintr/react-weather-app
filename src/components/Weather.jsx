@@ -6,6 +6,7 @@ import WeatherForecast from './WeatherForecast';
 const WeatherApp = () => {
     const [city, setCity] = useState('');
     const [weatherData, setWeatherData] = useState(null);
+    const [status, setStatus] = useState('')
 
     useEffect(() => {
         if (city) {
@@ -20,6 +21,7 @@ const WeatherApp = () => {
     const fetchWeatherData = async (city) => {
         const apiKey = '9578bd051c6400450fc666781d29e68d';
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
+        setStatus()
         if (response.statusText === 'OK') {
             const data = await response.json();
             setWeatherData(data);
@@ -54,10 +56,10 @@ const WeatherApp = () => {
             <h1 className='my-2'>Weather App</h1>
             <SearchBar setCity={setCity} />
             {weatherData && (
-                <>
+                <div className='main-data'>
                     <CurrentWeather data={weatherData} />
                     <WeatherForecast city={city} apiKey={'9578bd051c6400450fc666781d29e68d'} />
-                </>
+                </div>
             )}
             <div id="liveAlertPlaceholder"></div>
         </div>
