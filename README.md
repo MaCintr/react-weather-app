@@ -1,3 +1,30 @@
+# Weather App
+
+The Weather App is designed to provide you with real-time weather data for any city you search for. Follow these steps to get started:
+
+## Features
+
+- **Search for a City**: In the search bar, enter the name of the city you want to check the weather for. The app will return detailed weather information.
+
+- **Weather Data Displayed**: After searching for a city, the app will display the following details:
+  - **Temperature**: The current temperature in both Celsius and Fahrenheit.
+  - **Weather Conditions**: A description of the current weather, such as sunny, cloudy, or rainy.
+  - **Humidity**: The percentage of humidity in the air.
+  - **Wind Speed**: The current speed of the wind.
+
+## API Key Requirement
+
+To use the Weather App, you need an API key from OpenWeather. This key is essential to retrieve live weather data from the OpenWeather servers.
+
+### How to Get an API Key
+
+- Visit [OpenWeather API](https://openweathermap.org/api).
+- Sign up for an account.
+- Generate your API key from the dashboard.
+- Once you have the key, enter it into the app settings, and you’re all set to explore weather data!
+
+By following these steps, you can easily check the weather conditions in any city. Make sure to keep your API key secure and enjoy using the Weather App!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import CurrentWeather from './CurrentWeather';
 import WeatherForecast from './WeatherForecast';
 
+/* This aplication uses the OpenWeather API. You can get an API key at https://openweathermap.org/api. */
 const WeatherApp = () => {
     const [city, setCity] = useState('');
     const [weatherData, setWeatherData] = useState(null);
@@ -40,12 +41,10 @@ const WeatherApp = () => {
 
             alertPlaceholder.append(wrapper);
 
-            // Função para remover o alerta
             const removeAlert = () => {
                 wrapper.remove();
             };
 
-            // Adiciona o evento de clique ao botão para fechar o alerta
             const closeButton = wrapper.querySelector('.btn-close');
             closeButton.addEventListener('click', removeAlert);
         }
