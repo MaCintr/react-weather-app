@@ -19,7 +19,7 @@ const WeatherApp = () => {
     }, [city]);
 
     const fetchWeatherData = async (city) => {
-        const apiKey = '9578bd051c6400450fc666781d29e68d';
+        const apiKey = '' /*Insert your API key here*/;
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
         setStatus()
         if (response.statusText === 'OK') {
@@ -58,7 +58,7 @@ const WeatherApp = () => {
             {weatherData && (
                 <div className='main-data'>
                     <CurrentWeather data={weatherData} />
-                    <WeatherForecast city={city} apiKey={'9578bd051c6400450fc666781d29e68d'} />
+                    <WeatherForecast city={city} apiKey={''} /* Insert your API key here */ />
                 </div>
             )}
             <div id="liveAlertPlaceholder"></div>
