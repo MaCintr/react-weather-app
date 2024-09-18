@@ -23,6 +23,8 @@ To use the Weather App, you need an API key from OpenWeather. This key is essent
 - Generate your API key from the dashboard.
 - Once you have the key, enter it into the app settings, and you’re all set to explore weather data!
 
+Next, insert your API key into the designated fields in the Weather.jsx file to enable weather data retrieval.
+
 By following these steps, you can easily check the weather conditions in any city. Make sure to keep your API key secure and enjoy using the Weather App!
 
 # Getting Started with Create React App
