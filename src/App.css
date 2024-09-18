@@ -1,3 +1,10 @@
 .temp {
   font-size: calc(4rem + 1.5vw) !important;
 }
+
+.weather-forecast {
+  border-radius: 40px;
+  width: 90%;
+  text-align: center;
+  margin: 10px;
+}

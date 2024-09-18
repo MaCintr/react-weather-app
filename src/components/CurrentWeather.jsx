@@ -57,7 +57,8 @@ const CurrentWeather = ({ data }) => {
                     </div>
                 </div>
             )}
-            <div className={`my-4 d-flex align-items-center justify-content-center border border-light bg-opacity-10 rounded px-5 ${bgColor}`}>
+            <div className={`my-4 d-flex align-items-center justify-content-center bg-opacity-10 rounded px-5 ${bgColor} shadow`}
+            >
                 <div className='me-5'>
                     <h2>Current Weather in {data.name}</h2>
                     <h1 className='fw-light temp'>{(data.main.temp - 273.15).toFixed(1)}°C</h1>
